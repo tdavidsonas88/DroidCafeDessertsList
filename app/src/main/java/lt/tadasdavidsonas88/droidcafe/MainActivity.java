@@ -1,5 +1,6 @@
 package lt.tadasdavidsonas88.droidcafe;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -63,6 +64,8 @@ public class MainActivity extends AppCompatActivity {
      */
     public void showFoodOrder(String message) {
         displayToast(message);
+        Intent intent = new Intent(this, OrderActivity.class);
+        startActivity(intent);
     }
 
     /**
